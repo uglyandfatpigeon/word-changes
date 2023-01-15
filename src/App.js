@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
+import Box from './components/Box'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Canvas camera={{ position: [0, 3, 3], near: 0.025 }}>
+      <OrbitControls />
+      <pointLight position={[10, 10, 10]} />
+
+      <Box position={[-0.75, 0.5, 0]} name="A" color="purple" />
+      <Box position={[0.75, 0.5, 0]} name="B" color="red" />
+
+      <gridHelper />
+      <axesHelper args={[5]} />
+    </Canvas>
+  )
 }
 
-export default App;
+export default App
