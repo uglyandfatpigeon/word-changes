@@ -1,0 +1,46 @@
+h1,h2,h3,h4,h5 {
+    text-transform: uppercase;
+    letter-spacing: 1.03px;
+    line-height: 1.2em;
+}
+
+h1 {
+    background: -webkit-linear-gradient(0deg,#cdcbca, aliceblue,#cdcbca,#2a3a3f);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 100% !important;
+}
+
+h2 {
+    background: -webkit-linear-gradient(0deg,#cdcbca, aliceblue,#cdcbca,#2a3a3f);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 100% !important;
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.4em;
+    color: white;
+}
+
+
+.row {
+    width: 100%;
+    padding: 0 40px;
+}
+
+.logo-container {
+    position: absolute;
+    top: 62vh;
+}
+
+.internship-link {
+    position: absolute;
+    top: 350vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

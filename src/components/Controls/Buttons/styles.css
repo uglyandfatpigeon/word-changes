@@ -1,0 +1,7 @@
+.buttonsComponent {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    justify-content: center;
+    gap:10px;
+}

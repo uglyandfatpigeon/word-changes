@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
 
 const Box = (props) => {
+  const { color, mapTexture } = props
   const ref = useRef()
   const [hovered, setHover] = useState(false)
   const [rotate, setRotate] = useState(false)
@@ -22,7 +23,7 @@ const Box = (props) => {
       onPointerOver={() => setHover(true)}
       onPointerOut={() => setHover(false)}>
       <boxGeometry />
-      <meshPhongMaterial color={props.color} />
+      <meshPhongMaterial color={color} map={mapTexture} />
     </mesh>
   )
 }
